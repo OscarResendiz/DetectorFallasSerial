@@ -6,5 +6,11 @@ namespace DetectorFallasSerial
         {
             InitializeComponent();
         }
+
+        private void configButton_Click(object sender, EventArgs e)
+        {
+            FormConfigSerialPort dlg=new FormConfigSerialPort();
+            dlg.ShowDialog(this);
+        }
     }
 }

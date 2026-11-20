@@ -293,6 +293,7 @@ namespace DetectorFallasSerial
             configButton.TabIndex = 2;
             configButton.Text = "Config";
             configButton.UseVisualStyleBackColor = false;
+            configButton.Click += configButton_Click;
             // 
             // serialMonitorCard
             // 
