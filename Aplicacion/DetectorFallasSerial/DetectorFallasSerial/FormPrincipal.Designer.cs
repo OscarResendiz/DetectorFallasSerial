@@ -73,8 +73,8 @@ namespace DetectorFallasSerial
             monitorActions = new FlowLayoutPanel();
             pauseButton = new Button();
             clearButton = new Button();
-            analyzeButton = new Button();
             GuardarLogBtn = new Button();
+            analyzeButton = new Button();
             bottomLayout = new TableLayoutPanel();
             promptCard = new Panel();
             promptTextBox = new RichTextBox();
@@ -215,7 +215,7 @@ namespace DetectorFallasSerial
             baudComboBox.FlatStyle = FlatStyle.Flat;
             baudComboBox.Font = new Font("Segoe UI", 10F);
             baudComboBox.ForeColor = Color.FromArgb(236, 239, 242);
-            baudComboBox.Items.AddRange(new object[] { "1200", "2400", "4800", "9600", "14400", "19200", "38400", "57600", "115200", "230400" });
+            baudComboBox.Items.AddRange(new object[] { "2400", "4800", "9600", "14400", "19200", "38400", "43000", "57600", "76800", "115200", "128000", "230400", "256000", "460800", "921600", "1382400" });
             baudComboBox.Location = new Point(2, 26);
             baudComboBox.Margin = new Padding(0);
             baudComboBox.Name = "baudComboBox";
@@ -393,21 +393,6 @@ namespace DetectorFallasSerial
             clearButton.UseVisualStyleBackColor = false;
             clearButton.Click += clearButton_Click;
             // 
-            // analyzeButton
-            // 
-            analyzeButton.BackColor = Color.FromArgb(47, 55, 65);
-            analyzeButton.FlatAppearance.BorderColor = Color.FromArgb(65, 73, 83);
-            analyzeButton.FlatStyle = FlatStyle.Flat;
-            analyzeButton.Font = new Font("Segoe UI", 10F);
-            analyzeButton.ForeColor = Color.FromArgb(242, 244, 246);
-            analyzeButton.Location = new Point(319, 0);
-            analyzeButton.Margin = new Padding(5, 0, 5, 0);
-            analyzeButton.Name = "analyzeButton";
-            analyzeButton.Size = new Size(129, 34);
-            analyzeButton.TabIndex = 2;
-            analyzeButton.Text = "Analizar con la IA";
-            analyzeButton.UseVisualStyleBackColor = false;
-            // 
             // GuardarLogBtn
             // 
             GuardarLogBtn.BackColor = Color.FromArgb(47, 55, 65);
@@ -423,6 +408,22 @@ namespace DetectorFallasSerial
             GuardarLogBtn.Text = "Guardar log";
             GuardarLogBtn.UseVisualStyleBackColor = false;
             GuardarLogBtn.Click += GuardarLogBtn_Click;
+            // 
+            // analyzeButton
+            // 
+            analyzeButton.BackColor = Color.FromArgb(47, 55, 65);
+            analyzeButton.FlatAppearance.BorderColor = Color.FromArgb(65, 73, 83);
+            analyzeButton.FlatStyle = FlatStyle.Flat;
+            analyzeButton.Font = new Font("Segoe UI", 10F);
+            analyzeButton.ForeColor = Color.FromArgb(242, 244, 246);
+            analyzeButton.Location = new Point(319, 0);
+            analyzeButton.Margin = new Padding(5, 0, 5, 0);
+            analyzeButton.Name = "analyzeButton";
+            analyzeButton.Size = new Size(129, 34);
+            analyzeButton.TabIndex = 2;
+            analyzeButton.Text = "Analizar con la IA";
+            analyzeButton.UseVisualStyleBackColor = false;
+            analyzeButton.Click += analyzeButton_Click;
             // 
             // bottomLayout
             // 
@@ -603,7 +604,7 @@ namespace DetectorFallasSerial
             modelComboBox.FlatStyle = FlatStyle.Flat;
             modelComboBox.Font = new Font("Segoe UI", 10F);
             modelComboBox.ForeColor = Color.FromArgb(236, 239, 242);
-            modelComboBox.Items.AddRange(new object[] { "Modelo Activo: [ Gemini Pro 1.5 ]", "GPT-4o", "Llama 3 70B", "Claude 3.5 Sonnet" });
+            modelComboBox.Items.AddRange(new object[] { "GPT-4o-mini", "GPT-4o" });
             modelComboBox.Location = new Point(0, 0);
             modelComboBox.Margin = new Padding(0);
             modelComboBox.Name = "modelComboBox";

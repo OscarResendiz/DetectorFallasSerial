@@ -1,4 +1,5 @@
 using DetectorFallasSerial.PuertoSerial;
+using DetectorFallasSerial.LLMS.ChatGpt;
 using System.IO.Ports;
 
 
@@ -8,6 +9,7 @@ namespace DetectorFallasSerial
     {
         private SerialPort? PuertoSerial;
         private bool LecturaSerialPausada = false;
+        private ChatGptClient? _chatGptClient;
 
         private SerialPortDto ConfiguracionSerial = null;
         public FormPrincipal()
@@ -105,17 +107,22 @@ namespace DetectorFallasSerial
 
             if (serialOutputTextBox.IsDisposed || !serialOutputTextBox.IsHandleCreated)
                 return;
-
+            datos = datos.Trim();
+            if (datos == "")
+                return;
+            string normalizada = datos.Replace("\r\n", "\n")
+                                        .Replace("\r", "\n")
+                                        .Replace("\n", Environment.NewLine);
             if (serialOutputTextBox.InvokeRequired)
             {
                 serialOutputTextBox.BeginInvoke(new Action(() =>
                 {
-                    serialOutputTextBox.AppendText(datos);
+                    serialOutputTextBox.AppendText(normalizada);
                 }));
             }
             else
             {
-                serialOutputTextBox.AppendText(datos);
+                serialOutputTextBox.AppendText(normalizada);
             }
         }
 
@@ -178,6 +185,59 @@ namespace DetectorFallasSerial
             {
                 promptTextBox.Text = System.IO.File.ReadAllText(openFileDialog.FileName);
             }
+        }
+
+        private async void analyzeButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                analyzeButton.Enabled = false;
+                statusLabel.Text = "Consultando a ChatGPT...";
+
+                var modelo = modelComboBox.SelectedItem?.ToString()
+                    ?? "gpt-4o-mini";
+
+                if (modelo == "GPT-4o")
+                {
+                    modelo = "gpt-4o";
+                }
+                else
+                {
+                    modelo = "gpt-4o-mini";
+                }
+
+                _chatGptClient?.Dispose();
+                _chatGptClient = new ChatGptClient(model: modelo);
+
+                var descripcion = promptTextBox.Text.Trim();
+                var datosSerial = serialOutputTextBox.Text.Trim();
+                var consulta = $"Analiza el siguiente caso tecnico:\n\n" +
+                    $"Descripcion o solicitud:\n{descripcion}\n\n" +
+                    $"Datos capturados por el puerto serial:\n{datosSerial}";
+
+                var respuesta = await _chatGptClient.ConsultarAsync(consulta);
+                diagnosisTextBox.Text = respuesta;
+                statusLabel.Text = "Consulta completada";
+            }
+            catch (Exception ex)
+            {
+                statusLabel.Text = "Error al consultar a ChatGPT";
+                MessageBox.Show(
+                    ex.Message,
+                    "Error de ChatGPT",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+            finally
+            {
+                analyzeButton.Enabled = true;
+            }
+        }
+
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            _chatGptClient?.Dispose();
+            base.OnFormClosed(e);
         }
     }
 }
