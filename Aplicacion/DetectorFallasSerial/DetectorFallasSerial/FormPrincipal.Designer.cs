@@ -1,6 +1,6 @@
 namespace DetectorFallasSerial
 {
-    partial class Form1
+    partial class FormPrincipal
     {
         private System.ComponentModel.IContainer components = null;
         private TableLayoutPanel mainLayout;
@@ -36,7 +36,6 @@ namespace DetectorFallasSerial
         private Button analyzeButton;
         private Button openButton;
         private Button saveButton;
-        private Button templatesButton;
         private RichTextBox serialOutputTextBox;
         private RichTextBox promptTextBox;
         private RichTextBox diagnosisTextBox;
@@ -53,7 +52,7 @@ namespace DetectorFallasSerial
 
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             mainLayout = new TableLayoutPanel();
             serialSettingsLayout = new TableLayoutPanel();
             portField = new Panel();
@@ -75,6 +74,7 @@ namespace DetectorFallasSerial
             pauseButton = new Button();
             clearButton = new Button();
             analyzeButton = new Button();
+            GuardarLogBtn = new Button();
             bottomLayout = new TableLayoutPanel();
             promptCard = new Panel();
             promptTextBox = new RichTextBox();
@@ -83,7 +83,6 @@ namespace DetectorFallasSerial
             promptActions = new FlowLayoutPanel();
             openButton = new Button();
             saveButton = new Button();
-            templatesButton = new Button();
             diagnosisCard = new Panel();
             diagnosisTextBox = new RichTextBox();
             diagnosisHeader = new Panel();
@@ -216,7 +215,7 @@ namespace DetectorFallasSerial
             baudComboBox.FlatStyle = FlatStyle.Flat;
             baudComboBox.Font = new Font("Segoe UI", 10F);
             baudComboBox.ForeColor = Color.FromArgb(236, 239, 242);
-            baudComboBox.Items.AddRange(new object[] { "9600", "57600", "115200", "230400" });
+            baudComboBox.Items.AddRange(new object[] { "1200", "2400", "4800", "9600", "14400", "19200", "38400", "57600", "115200", "230400" });
             baudComboBox.Location = new Point(2, 26);
             baudComboBox.Margin = new Padding(0);
             baudComboBox.Name = "baudComboBox";
@@ -252,6 +251,7 @@ namespace DetectorFallasSerial
             // disconnectButton
             // 
             disconnectButton.BackColor = Color.FromArgb(47, 55, 65);
+            disconnectButton.Enabled = false;
             disconnectButton.FlatAppearance.BorderColor = Color.FromArgb(65, 73, 83);
             disconnectButton.FlatStyle = FlatStyle.Flat;
             disconnectButton.Font = new Font("Segoe UI", 10F);
@@ -263,6 +263,7 @@ namespace DetectorFallasSerial
             disconnectButton.TabIndex = 0;
             disconnectButton.Text = "Desconectar";
             disconnectButton.UseVisualStyleBackColor = false;
+            disconnectButton.Click += disconnectButton_Click;
             // 
             // connectButton
             // 
@@ -278,6 +279,7 @@ namespace DetectorFallasSerial
             connectButton.TabIndex = 1;
             connectButton.Text = "Conectar";
             connectButton.UseVisualStyleBackColor = false;
+            connectButton.Click += connectButton_Click;
             // 
             // configButton
             // 
@@ -341,7 +343,7 @@ namespace DetectorFallasSerial
             monitorTitleLabel.ForeColor = Color.FromArgb(236, 239, 242);
             monitorTitleLabel.Location = new Point(0, 0);
             monitorTitleLabel.Name = "monitorTitleLabel";
-            monitorTitleLabel.Size = new Size(856, 40);
+            monitorTitleLabel.Size = new Size(586, 40);
             monitorTitleLabel.TabIndex = 0;
             monitorTitleLabel.Text = "MONITOR DE LECTURA SERIAL (TELEMETRÍA)";
             monitorTitleLabel.TextAlign = ContentAlignment.MiddleLeft;
@@ -350,11 +352,12 @@ namespace DetectorFallasSerial
             // 
             monitorActions.Controls.Add(pauseButton);
             monitorActions.Controls.Add(clearButton);
+            monitorActions.Controls.Add(GuardarLogBtn);
             monitorActions.Controls.Add(analyzeButton);
             monitorActions.Dock = DockStyle.Right;
-            monitorActions.Location = new Point(856, 0);
+            monitorActions.Location = new Point(586, 0);
             monitorActions.Name = "monitorActions";
-            monitorActions.Size = new Size(200, 40);
+            monitorActions.Size = new Size(470, 40);
             monitorActions.TabIndex = 0;
             monitorActions.WrapContents = false;
             // 
@@ -372,6 +375,7 @@ namespace DetectorFallasSerial
             pauseButton.TabIndex = 0;
             pauseButton.Text = "Pausar";
             pauseButton.UseVisualStyleBackColor = false;
+            pauseButton.Click += pauseButton_Click;
             // 
             // clearButton
             // 
@@ -387,6 +391,7 @@ namespace DetectorFallasSerial
             clearButton.TabIndex = 1;
             clearButton.Text = "Limpiar";
             clearButton.UseVisualStyleBackColor = false;
+            clearButton.Click += clearButton_Click;
             // 
             // analyzeButton
             // 
@@ -395,13 +400,29 @@ namespace DetectorFallasSerial
             analyzeButton.FlatStyle = FlatStyle.Flat;
             analyzeButton.Font = new Font("Segoe UI", 10F);
             analyzeButton.ForeColor = Color.FromArgb(242, 244, 246);
-            analyzeButton.Location = new Point(209, 0);
+            analyzeButton.Location = new Point(319, 0);
             analyzeButton.Margin = new Padding(5, 0, 5, 0);
             analyzeButton.Name = "analyzeButton";
-            analyzeButton.Size = new Size(100, 34);
+            analyzeButton.Size = new Size(129, 34);
             analyzeButton.TabIndex = 2;
-            analyzeButton.Text = "Analizar";
+            analyzeButton.Text = "Analizar con la IA";
             analyzeButton.UseVisualStyleBackColor = false;
+            // 
+            // GuardarLogBtn
+            // 
+            GuardarLogBtn.BackColor = Color.FromArgb(47, 55, 65);
+            GuardarLogBtn.FlatAppearance.BorderColor = Color.FromArgb(65, 73, 83);
+            GuardarLogBtn.FlatStyle = FlatStyle.Flat;
+            GuardarLogBtn.Font = new Font("Segoe UI", 10F);
+            GuardarLogBtn.ForeColor = Color.FromArgb(242, 244, 246);
+            GuardarLogBtn.Location = new Point(209, 0);
+            GuardarLogBtn.Margin = new Padding(5, 0, 5, 0);
+            GuardarLogBtn.Name = "GuardarLogBtn";
+            GuardarLogBtn.Size = new Size(100, 34);
+            GuardarLogBtn.TabIndex = 3;
+            GuardarLogBtn.Text = "Guardar log";
+            GuardarLogBtn.UseVisualStyleBackColor = false;
+            GuardarLogBtn.Click += GuardarLogBtn_Click;
             // 
             // bottomLayout
             // 
@@ -474,7 +495,6 @@ namespace DetectorFallasSerial
             // 
             promptActions.Controls.Add(openButton);
             promptActions.Controls.Add(saveButton);
-            promptActions.Controls.Add(templatesButton);
             promptActions.Dock = DockStyle.Bottom;
             promptActions.Location = new Point(0, 40);
             promptActions.Name = "promptActions";
@@ -496,6 +516,7 @@ namespace DetectorFallasSerial
             openButton.TabIndex = 0;
             openButton.Text = "Abrir";
             openButton.UseVisualStyleBackColor = false;
+            openButton.Click += openButton_Click;
             // 
             // saveButton
             // 
@@ -511,21 +532,7 @@ namespace DetectorFallasSerial
             saveButton.TabIndex = 1;
             saveButton.Text = "Guardar";
             saveButton.UseVisualStyleBackColor = false;
-            // 
-            // templatesButton
-            // 
-            templatesButton.BackColor = Color.FromArgb(47, 55, 65);
-            templatesButton.FlatAppearance.BorderColor = Color.FromArgb(65, 73, 83);
-            templatesButton.FlatStyle = FlatStyle.Flat;
-            templatesButton.Font = new Font("Segoe UI", 10F);
-            templatesButton.ForeColor = Color.FromArgb(242, 244, 246);
-            templatesButton.Location = new Point(207, 0);
-            templatesButton.Margin = new Padding(5, 0, 5, 0);
-            templatesButton.Name = "templatesButton";
-            templatesButton.Size = new Size(112, 34);
-            templatesButton.TabIndex = 2;
-            templatesButton.Text = "Plantillas";
-            templatesButton.UseVisualStyleBackColor = false;
+            saveButton.Click += saveButton_Click;
             // 
             // diagnosisCard
             // 
@@ -615,7 +622,7 @@ namespace DetectorFallasSerial
             statusLabel.Text = "Estado: Listo  |  Puerto COM3 (115200, 8, N, 1)  |  Última respuesta: 1.4s";
             statusLabel.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // Form1
+            // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -624,9 +631,10 @@ namespace DetectorFallasSerial
             Controls.Add(mainLayout);
             Font = new Font("Segoe UI", 10F);
             MinimumSize = new Size(1000, 720);
-            Name = "Form1";
+            Name = "FormPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "DETECTOR DE FALLAS - DIAGNÓSTICO SERIAL & IA";
+            Load += FormPrincipal_Load;
             mainLayout.ResumeLayout(false);
             serialSettingsLayout.ResumeLayout(false);
             portField.ResumeLayout(false);
@@ -644,5 +652,7 @@ namespace DetectorFallasSerial
             modelActions.ResumeLayout(false);
             ResumeLayout(false);
         }
+
+        private Button GuardarLogBtn;
     }
 }

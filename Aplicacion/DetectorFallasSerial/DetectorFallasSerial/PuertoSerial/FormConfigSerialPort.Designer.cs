@@ -37,7 +37,9 @@
             portLabel = new Label();
             ComboPuerto = new ComboBox();
             refreshButton = new Button();
+            cancelButton = new Button();
             baudLabel = new Label();
+            saveButton = new Button();
             ComboVelocidad = new ComboBox();
             parametersTitle = new Label();
             parametersCard = new Panel();
@@ -49,8 +51,6 @@
             ComboBitsParo = new ComboBox();
             flowControlLabel = new Label();
             flowControlCombo = new ComboBox();
-            cancelButton = new Button();
-            saveButton = new Button();
             statusLabel = new Label();
             headerPanel.SuspendLayout();
             basicCard.SuspendLayout();
@@ -164,7 +164,22 @@
             refreshButton.TabIndex = 3;
             refreshButton.Text = "⟳";
             refreshButton.UseVisualStyleBackColor = false;
-            refreshButton.Click += this.refreshButton_Click;
+            refreshButton.Click += refreshButton_Click;
+            // 
+            // cancelButton
+            // 
+            cancelButton.BackColor = Color.FromArgb(47, 55, 65);
+            cancelButton.DialogResult = DialogResult.Cancel;
+            cancelButton.FlatAppearance.BorderColor = Color.FromArgb(65, 73, 83);
+            cancelButton.FlatStyle = FlatStyle.Flat;
+            cancelButton.Font = new Font("Segoe UI", 11F);
+            cancelButton.ForeColor = Color.FromArgb(242, 244, 246);
+            cancelButton.Location = new Point(705, 72);
+            cancelButton.Name = "cancelButton";
+            cancelButton.Size = new Size(155, 34);
+            cancelButton.TabIndex = 3;
+            cancelButton.Text = "Cancelar";
+            cancelButton.UseVisualStyleBackColor = false;
             // 
             // baudLabel
             // 
@@ -177,6 +192,21 @@
             baudLabel.TabIndex = 4;
             baudLabel.Text = "Baudios (Velocidad):";
             // 
+            // saveButton
+            // 
+            saveButton.BackColor = Color.FromArgb(35, 112, 112);
+            saveButton.FlatAppearance.BorderColor = Color.FromArgb(65, 73, 83);
+            saveButton.FlatStyle = FlatStyle.Flat;
+            saveButton.Font = new Font("Segoe UI", 11F);
+            saveButton.ForeColor = Color.FromArgb(242, 244, 246);
+            saveButton.Location = new Point(705, 14);
+            saveButton.Name = "saveButton";
+            saveButton.Size = new Size(155, 34);
+            saveButton.TabIndex = 4;
+            saveButton.Text = "Guardar y cerrar";
+            saveButton.UseVisualStyleBackColor = false;
+            saveButton.Click += saveButton_Click;
+            // 
             // ComboVelocidad
             // 
             ComboVelocidad.BackColor = Color.FromArgb(35, 41, 49);
@@ -184,7 +214,7 @@
             ComboVelocidad.FlatStyle = FlatStyle.Flat;
             ComboVelocidad.Font = new Font("Segoe UI", 11F);
             ComboVelocidad.ForeColor = Color.FromArgb(236, 239, 242);
-            ComboVelocidad.Items.AddRange(new object[] { "115200", "9600", "57600", "230400" });
+            ComboVelocidad.Items.AddRange(new object[] { "1200", "2400", "4800", "9600", "14400", "19200", "38400", "57600", "115200", "230400" });
             ComboVelocidad.Location = new Point(18, 150);
             ComboVelocidad.Name = "ComboVelocidad";
             ComboVelocidad.Size = new Size(355, 28);
@@ -236,7 +266,7 @@
             ComboBitsDatos.FlatStyle = FlatStyle.Flat;
             ComboBitsDatos.Font = new Font("Segoe UI", 11F);
             ComboBitsDatos.ForeColor = Color.FromArgb(236, 239, 242);
-            ComboBitsDatos.Items.AddRange(new object[] { "8", "7", "6", "5" });
+            ComboBitsDatos.Items.AddRange(new object[] { "5", "6", "7", "8" });
             ComboBitsDatos.Location = new Point(18, 41);
             ComboBitsDatos.Name = "ComboBitsDatos";
             ComboBitsDatos.Size = new Size(405, 28);
@@ -260,7 +290,7 @@
             ComboParidad.FlatStyle = FlatStyle.Flat;
             ComboParidad.Font = new Font("Segoe UI", 11F);
             ComboParidad.ForeColor = Color.FromArgb(236, 239, 242);
-            ComboParidad.Items.AddRange(new object[] { "Ninguna", "Par", "Impar" });
+            ComboParidad.Items.AddRange(new object[] { "None", "Odd", "Even", "Mark", "Space" });
             ComboParidad.Location = new Point(446, 41);
             ComboParidad.Name = "ComboParidad";
             ComboParidad.Size = new Size(405, 28);
@@ -284,7 +314,7 @@
             ComboBitsParo.FlatStyle = FlatStyle.Flat;
             ComboBitsParo.Font = new Font("Segoe UI", 11F);
             ComboBitsParo.ForeColor = Color.FromArgb(236, 239, 242);
-            ComboBitsParo.Items.AddRange(new object[] { "1", "1.5", "2" });
+            ComboBitsParo.Items.AddRange(new object[] { "None", "One", "Two", "OnePointFive" });
             ComboBitsParo.Location = new Point(18, 114);
             ComboBitsParo.Name = "ComboBitsParo";
             ComboBitsParo.Size = new Size(405, 28);
@@ -313,36 +343,6 @@
             flowControlCombo.Name = "flowControlCombo";
             flowControlCombo.Size = new Size(405, 28);
             flowControlCombo.TabIndex = 8;
-            // 
-            // cancelButton
-            // 
-            cancelButton.BackColor = Color.FromArgb(47, 55, 65);
-            cancelButton.DialogResult = DialogResult.Cancel;
-            cancelButton.FlatAppearance.BorderColor = Color.FromArgb(65, 73, 83);
-            cancelButton.FlatStyle = FlatStyle.Flat;
-            cancelButton.Font = new Font("Segoe UI", 11F);
-            cancelButton.ForeColor = Color.FromArgb(242, 244, 246);
-            cancelButton.Location = new Point(705, 72);
-            cancelButton.Name = "cancelButton";
-            cancelButton.Size = new Size(155, 34);
-            cancelButton.TabIndex = 3;
-            cancelButton.Text = "Cancelar";
-            cancelButton.UseVisualStyleBackColor = false;
-            // 
-            // saveButton
-            // 
-            saveButton.BackColor = Color.FromArgb(35, 112, 112);
-            saveButton.FlatAppearance.BorderColor = Color.FromArgb(65, 73, 83);
-            saveButton.FlatStyle = FlatStyle.Flat;
-            saveButton.Font = new Font("Segoe UI", 11F);
-            saveButton.ForeColor = Color.FromArgb(242, 244, 246);
-            saveButton.Location = new Point(705, 14);
-            saveButton.Name = "saveButton";
-            saveButton.Size = new Size(155, 34);
-            saveButton.TabIndex = 4;
-            saveButton.Text = "Guardar y cerrar";
-            saveButton.UseVisualStyleBackColor = false;
-            saveButton.Click += saveButton_Click;
             // 
             // statusLabel
             // 

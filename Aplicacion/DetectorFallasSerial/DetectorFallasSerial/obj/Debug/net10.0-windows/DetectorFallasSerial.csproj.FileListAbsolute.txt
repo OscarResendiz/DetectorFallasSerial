@@ -3,7 +3,6 @@ C:\Oscar\Repositorios\DetectorFallasSerial\Aplicacion\DetectorFallasSerial\Detec
 C:\Oscar\Repositorios\DetectorFallasSerial\Aplicacion\DetectorFallasSerial\DetectorFallasSerial\bin\Debug\net10.0-windows\DetectorFallasSerial.runtimeconfig.json
 C:\Oscar\Repositorios\DetectorFallasSerial\Aplicacion\DetectorFallasSerial\DetectorFallasSerial\bin\Debug\net10.0-windows\DetectorFallasSerial.dll
 C:\Oscar\Repositorios\DetectorFallasSerial\Aplicacion\DetectorFallasSerial\DetectorFallasSerial\bin\Debug\net10.0-windows\DetectorFallasSerial.pdb
-C:\Oscar\Repositorios\DetectorFallasSerial\Aplicacion\DetectorFallasSerial\DetectorFallasSerial\obj\Debug\net10.0-windows\DetectorFallasSerial.Form1.resources
 C:\Oscar\Repositorios\DetectorFallasSerial\Aplicacion\DetectorFallasSerial\DetectorFallasSerial\obj\Debug\net10.0-windows\DetectorFallasSerial.csproj.GenerateResource.cache
 C:\Oscar\Repositorios\DetectorFallasSerial\Aplicacion\DetectorFallasSerial\DetectorFallasSerial\obj\Debug\net10.0-windows\DetectorFallasSerial.GeneratedMSBuildEditorConfig.editorconfig
 C:\Oscar\Repositorios\DetectorFallasSerial\Aplicacion\DetectorFallasSerial\DetectorFallasSerial\obj\Debug\net10.0-windows\DetectorFallasSerial.AssemblyInfoInputs.cache
@@ -41,3 +40,4 @@ C:\Oscar\Repositorios\DetectorFallasSerial\Aplicacion\DetectorFallasSerial\Detec
 C:\Oscar\Repositorios\DetectorFallasSerial\Aplicacion\DetectorFallasSerial\DetectorFallasSerial\bin\Debug\net10.0-windows\runtimes\unix\lib\net10.0\System.IO.Ports.dll
 C:\Oscar\Repositorios\DetectorFallasSerial\Aplicacion\DetectorFallasSerial\DetectorFallasSerial\bin\Debug\net10.0-windows\runtimes\win\lib\net10.0\System.IO.Ports.dll
 C:\Oscar\Repositorios\DetectorFallasSerial\Aplicacion\DetectorFallasSerial\DetectorFallasSerial\obj\Debug\net10.0-windows\DetectorFallasSerial.csproj.AssemblyReference.cache
+C:\Oscar\Repositorios\DetectorFallasSerial\Aplicacion\DetectorFallasSerial\DetectorFallasSerial\obj\Debug\net10.0-windows\DetectorFallasSerial.FormPrincipal.resources
