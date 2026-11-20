@@ -117,4 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="serialOutputTextBox.Text" xml:space="preserve">
+    <value> [12:10:04]  VBUS: 5.02V  |  CC1: 0.42V  |  Consumo inicial: 0.08A
+ [12:10:05]  Pico detectado en línea PP_VDD_MAIN -&gt; 1.85A [ROJO] (Posible fuga en etapa de potencia)
+ [12:10:06]  Lectura estabilizada...</value>
+  </data>
+  <data name="diagnosisTextBox.Text" xml:space="preserve">
+    <value>### Posible Falla
+El pico de 1.85A a 5V indica un posible cortocircuito en la línea PP_VDD_MAIN.
+
+Revisar:
+
+1. Capacitores de filtro en línea VBAT.
+2. IC de carga (Tristar/Hydra).
+3. Líneas secundarias alimentadas por PP_VDD_MAIN.</value>
+  </data>
 </root>

@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Oscar\\Repositorios\\DetectorFallasSerial\\Aplicacion\\DetectorFallasSerial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F573DA91-36FF-4445-808C-313159B70260}|DetectorFallasSerial\\DetectorFallasSerial.csproj|c:\\oscar\\repositorios\\detectorfallasserial\\aplicacion\\detectorfallasserial\\detectorfallasserial\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F573DA91-36FF-4445-808C-313159B70260}|DetectorFallasSerial\\DetectorFallasSerial.csproj|solutionrelative:detectorfallasserial\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5115D9AB-87F2-F854-75EE-D83E0816B170}|DetectorFallasSerial\\DetectorFallasSerial.csproj|c:\\oscar\\repositorios\\detectorfallasserial\\aplicacion\\detectorfallasserial\\detectorfallasserial\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5115D9AB-87F2-F854-75EE-D83E0816B170}|DetectorFallasSerial\\DetectorFallasSerial.csproj|solutionrelative:detectorfallasserial\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5115D9AB-87F2-F854-75EE-D83E0816B170}|DetectorFallasSerial\\DetectorFallasSerial.csproj|c:\\oscar\\repositorios\\detectorfallasserial\\aplicacion\\detectorfallasserial\\detectorfallasserial\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5115D9AB-87F2-F854-75EE-D83E0816B170}|DetectorFallasSerial\\DetectorFallasSerial.csproj|solutionrelative:detectorfallasserial\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
+              "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Oscar\\Repositorios\\DetectorFallasSerial\\Aplicacion\\DetectorFallasSerial\\DetectorFallasSerial\\Form1.cs",
               "RelativeDocumentMoniker": "DetectorFallasSerial\\Form1.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\DetectorFallasSerial\\Aplicacion\\DetectorFallasSerial\\DetectorFallasSerial\\Form1.cs [Design]",
-              "RelativeToolTip": "DetectorFallasSerial\\Form1.cs [Design]",
+              "ToolTip": "C:\\Oscar\\Repositorios\\DetectorFallasSerial\\Aplicacion\\DetectorFallasSerial\\DetectorFallasSerial\\Form1.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "DetectorFallasSerial\\Form1.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T20:53:25.155Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-20T18:48:53.703Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Oscar\\Repositorios\\DetectorFallasSerial\\Aplicacion\\DetectorFallasSerial\\DetectorFallasSerial\\Form1.cs",
+              "RelativeDocumentMoniker": "DetectorFallasSerial\\Form1.cs",
+              "ToolTip": "C:\\Oscar\\Repositorios\\DetectorFallasSerial\\Aplicacion\\DetectorFallasSerial\\DetectorFallasSerial\\Form1.cs*",
+              "RelativeToolTip": "DetectorFallasSerial\\Form1.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-20T18:43:28.73Z",
+              "EditorCaption": ""
             }
           ]
         }
