@@ -1,0 +1,1167 @@
+?[SD0] SET_CLK(260kHz): SCLK(259kHz) MODE(2) DDR(1) DIV(192) DS(0) RS(0)
+
+[SD0] Size: 59640 MB, Max.Speed: 52000 kHz, blklen(512), nblks(122142720)
+
+[SD0] Initialized, eMMC45[SD0] SET_CLK(52000kHz): SCLK(50000kHz) MODE(2) DDR(1) DIV(1) DS(0) RS(0)
+
+#T#Boot dev init=197
+
+[PLFM] Init Boot Device: OK(0)
+
+#T#Long Pressed Reboot=0
+
+[PLFM] Init PWRAP: OK(0)
+
+[PLFM]Init PMIC: OK(0)
+
+[PLFM] chip_hw_ver[CA00], chip_sw_ver[0]
+
+clk_buf_dump_dts_log: PMIC_CLK_BUF?_STATUS=2 1 1 2 0 0 0
+
+clk_buf_dump_dts_log: PMIC_CLK_BUF?_DRV_CURR=1 1 1 1 1 1 1
+
+clk_buf_dump_clkbuf_log DCXO_CW00/02/11/13/14/15/16/20/top_spi_con1=0x4E1D 3AEE 8000 98E9 82B5 A2AA 9455 11 1
+
+clk_buf_dump_clkbuf_log DCXO_CW00/02/11/13/14/15/16/20/top_spi_con1=0x4E1D 3AEE 8000 98E9 82B5 A2AA 9455 11 0
+
+clk_buf_init_pmic_wrap: DCXO_CONN_ADR0/WDATA0/ADR1/WDATA1=0x44A/0/44A/1
+
+clk_buf_init_pmic_wrap: DCXO_NFC_ADR0/WDATA0/ADR1/WDATA1/EN=0x78C/100/78A/100/3
+
+[RTC]switch to dcxo
+
+[PMIC] pmic_init_setting end. v180104
+
+[MT6357] 1 1,48
+
+[MT6357] get volt 6, 61, 900000
+
+vsram_proc = 900000 uV
+
+[MT6357] get volt 3, 45, 800000
+
+vproc = 800000 uV
+
+[MT6357] get volt 5, 61, 900000
+
+vsram_others = 900000 uV
+
+[MT6357] get volt 2, 45, 800000
+
+vcore = 800000 uV
+
+[MT6357] get volt 1, 48, 800000
+
+vmodem = 800000 uV
+
+[MT6357] 2 5,1
+
+[MT6357] 2 6,1
+
+[MT6357] 2 3,1
+
+[MT6357] 2 2,1
+
+[MT6357] 2 1,1
+
+[DDR Reserve] ddr reserve mode not be enabled yet
+
+#T#chk DDR Reserve status=95
+
+Enter mtk_kpd_gpio_set! 
+
+after set KP enable: KP_SEL = 0x1C70 !
+
+#T#check Boot status-RTC=34
+
+#T#check Boot status-PMIC=0
+
+#T#check Boot status-WDT=0
+
+power key is pressed
+
+battery doesn't exist
+
+#T#check Boot status-PWR key=1
+
+[PMIC]IsUsbCableIn 0
+
+[PLFM] Unknown boot!
+
+[PMIC]POWER_HOLD :0x0?[PMIC] pmic_init_setting end. v180104[MT6357] 1 1,48
+
+[MT6357] get volt 6, 61, 900000
+
+vsram_proc = 900000 uV
+
+[MT6357] get volt 3, 45, 800000
+
+vproc = 800000 uV
+
+[MT6357] get volt 5, 61, 900000
+
+vsram_others = 900000 uV
+
+[MT6357] get volt 2, 45, 800000
+
+vcore = 800000 uV
+
+[MT6357] get volt 1, 48, 800000
+
+vmodem = 800000 uV
+
+[MT6357] 2 5,1
+
+[MT6357] 2 6,1
+
+[MT6357] 2 3,1
+
+[MT6357] 2 2,1
+
+[MT6357] 2 1,1
+
+[DDR Reserve] ddr reserve mode not be enabled yet
+
+#T#chk DDR Reserve status=95
+
+Enter mtk_kpd_gpio_set! 
+
+after set KP enable: KP_SEL = 0x1C70 !
+
+#T#check Boot status-RTC=34
+
+#T#check Boot status-PMIC=0
+
+#T#check Boot status-WDT=0
+
+power key is pressed
+
+battery doesn't exist
+
+#T#check Boot status-PWR key=1
+
+[PMIC]IsUsbCableIn 0
+
+[PLFM] Unknown boot!
+
+[PMIC]POWER_HOLD :0x?[SD0] SET_CLK(260kHz): SCLK(259kHz) MODE(2) DDR(1) DIV(192) DS(0) RS(0)
+
+[SD0] Size: 59640 MB, Max.Speed: 52000 kHz, blklen(512), nblks(122142720)
+
+[SD0] Initialized, eMMC45[SD0] SET_CLK(52000kHz): SCLK(50000kHz) MODE(2) DDR(1) DIV(1) DS(0) RS(0)
+
+#T#Boot dev init=197
+
+[PLFM] Init Boot Device: OK(0)
+
+#T#Long Pressed Reboot=0
+
+[PLFM] Init PWRAP: OK(0)
+
+[PLFM] Init PMIC: OK(0)
+
+[PLFM] chip_hw_ver[CA00], chip_sw_ver[0]
+
+clk_buf_dump_dts_log: PMIC_CLK_BUF?_STATUS=2 1 1 2 0 0 0
+
+clk_buf_dump_dts_log: PMIC_CLK_BUF?_DRV_CURR=1 1 1 1 1 1 1clk_buf_dump_clkbuf_log DCXO_CW00/02/11/13/14/15/16/20/top_spi_con1=0x4E1D 3AEE 8000 98E9 82B5 A2AA 9455 11 1clk_buf_dump_clkbuf_log DCXO_CW00/02/11/13/14/15/16/20/top_spi_con1=0x4E1D 3AEE 8000 98E9 82B5 A2AA 9455 11 0
+
+clk_buf_init_pmic_wrap: DCXO_CONN_ADR0/WDATA0/ADR1/WDATA1=0x44A/0/44A/1
+
+clk_buf_init_pmic_wrap: DCXO_NFC_ADR0/WDATA0/ADR1/WDATA1/EN=0x78C/100/78A/100/3
+
+[RTC]switch to dcxo
+
+[PMIC] pmic_init_setting end. v180104
+
+[MT6357] 1 1,48
+
+[MT6357] get volt 6, 61, 900000
+
+vsram_proc = 900000 uV
+
+[MT6357] get volt 3, 45, 800000
+
+vproc = 800000 uV
+
+[MT6357] get volt 5, 61, 900000
+
+vsram_others = 900000 uV
+
+[MT6357] get volt 2, 45, 800000
+
+vcore = 800000 uV
+
+[MT6357] get volt 1, 48, 800000
+
+vmodem = 800000 uV
+
+[MT6357] 2 5,1
+
+[MT6357] 2 6,1
+
+[MT6357] 2 3,1
+
+[MT6357] 2 2,1
+
+[MT6357] 2 1,1
+
+[DDR Reserve] ddr reserve mode not be enabled yet
+
+#T#chk DDR Reserve status=95
+
+Enter mtk_kpd_gpio_set! 
+
+after set KP enable: KP_SEL = 0x1C70 !
+
+#T#check Boot status-RTC=34
+
+#T#check Boot status-PMIC=0
+
+#T#check Boot status-WDT=0
+
+power key is pressed
+
+battery doesn't exist
+
+#T#check Boot status-PWR key=1
+
+[PMIC]IsUsbCableIn 0
+
+[PLFM] Unknown boot!
+
+[PMIC]POWER_HOLD :0x0
+
+?[PMIC] pmic_init_setting end. v180104
+
+[MT6357] 1 1,48
+
+[MT6357] get volt 6, 61, 900000
+
+vsram_proc = 900000 uV
+
+[MT6357] get volt 3, 45, 800000
+
+vproc = 800000 uV
+
+[MT6357] get volt 5, 61, 900000
+
+vsram_others = 900000 uV
+
+[MT6357] get volt 2, 45, 800000
+
+vcore = 800000 uV
+
+[MT6357] get volt 1, 48, 800000
+
+vmodem = 800000 uV
+
+[MT6357] 2 5,1
+
+[MT6357] 2 6,1
+
+[MT6357] 2 3,1
+
+[MT6357] 2 2,1
+
+[MT6357] 2 1,1
+
+[DDR Reserve] ddr reserve mode not be enabled yet
+
+#T#chk DDR Reserve status=95
+
+Enter mtk_kpd_gpio_set!after set KP enable: KP_SEL = 0x1C70 !
+
+#T#check Boot status-RTC=34
+
+#T#check Boot status-PMIC=0
+
+#T#check Boot status-WDT=0
+
+power key is pressed
+
+battery doesn't exist
+
+#T#check Boot status-PWR key=1
+
+[PMIC]IsUsbCableIn 0
+
+[PLFM] Unknown boot![PMIC]POWER_HOLD :0x???#PL_LOG_STORE: check once, sig value 0xFF7E0340, addr 0x102000.
+
+PL_LOG_STORE:sram->sig value 0xB7772087!
+
+PL_LOG_STORE:sram header is not match, format all!
+
+PL_LOG_STORE:set ram_header->sig = 0xABCD1234
+
+T#Preloader Start=1
+
+[HT22] : 1 0x4 0x4 done
+
+0:0x80000000, 1:0x1100, 2:0x1, 3:0x80002, 4:0x40000000, STA:0x0, S:0x4, FAB0:0x6765, FAB11:0x0
+
+A:0x0, B:0x3F, C:0x40, D:0x1F, E:0x1, F:0x3, G:0x2
+
+DATE_CODE_YY:1, DATE_CODE_WW:1A
+
+[SegCode] Segment Code:0x4, PROJECT_CODE:0x0, FAB_CODE:0x2, RW_STA:0x0, CTL:0x0, DCM:0x7
+
+#T#DEVINFO=28
+
+Pll init start...
+
+Pll init Done!
+
+#T#PLL=2
+
+#T#GPIO=0
+
+[PWRAP] CRITICAL,line=848 [PWRAP] CRITICAL,line=843 [PWRAP] CRITICAL,line=876 [PWRAP] CRITICAL,line=895 [PWRAP] CRITICAL,line=1173 [PWRAP] CRITICAL,line=1195 [PWRAP] CRITICAL,line=1355 [PWRAP] CRITICAL,line=1357 [PWRAP] CRITICAL,line=1359 [PWRAP] CRITICAL,line=1361 [PWRAP] CRITICAL,line=1363 [PWRAP] CRITICAL,line=1365 [PWRAP] CRITICAL,line=1474 #T#PWRAP=5
+
+#T#I2C=0
+
+[PMIC]Preloader Start
+
+[PMIC]MT6357 CHIP Code = 0x5721
+
+[PMIC]POWER_HOLD :0x1
+
+[PMIC]TOP_RST_STATUS[0x152]=0x48
+
+[PMIC]PONSTS[0xC]=0x1
+
+[PMIC]POFFSTS[0xE]=0x80
+
+[PMIC]PGSTATUS0[0x14]=0xFFFE
+
+[PMIC]PSOCSTATUS[0x16]=0x0
+
+[PMIC]BUCK_OC_SDN_STATUS[0x1434]=0x0
+
+[PMIC]BUCK_OC_SDN_EN[0x1444]=0x19F
+
+[PMIC]THERMALSTATUS[0x18]=0x0
+
+[PMIC]STRUP_CON4[0xA1C]=0x0
+
+[PMIC]TOP_RST_MISC[0x14C]=0x1200
+
+[PMIC]TOP_CLK_TRIM[0x38E]=0x6CC0
+
+latch VPROC 800000 uV
+
+latch VSRAM_PROC 900000 uV
+
+latch VSRAM_OTHERS 900000 uV
+
+latch VCORE 800000 uV
+
+latch VMODEM 800000 uV
+
+[pmic_check_rst] DDLO_RSTB
+
+[PMIC]just_rst = 0
+
+No EFUSE SW Load
+
+battery doesn't exist
+
+[PMIC]pmic_wdt_set Reg[0x14C]=0x1221
+
+[rt5738_driver_probe]
+
+[rt5738_hw_component_detect] exist = 0, Chip ID = A801
+
+[rt5738_driver_probe] PL rt5738_vdd2 is not exist
+
+[I2C] id=3,addr: 50, transfer error
+
+[I2C] I2C_ACKERR
+
+[I2C] write_read 0x10001 bytes fails,ret=-121.
+
+[I2C] id=3,addr: 50, transfer error
+
+[I2C] I2C_ACKERR
+
+[I2C] write_read 0x10001 bytes fails,ret=-121.
+
+[I2C] id=3,addr: 50, transfer error
+
+[I2C] I2C_ACKERR
+
+[I2C] write_read 0x10001 bytes fails,ret=-121.
+
+[rt5738_hw_component_detect] exist = 0, Chip ID = 304
+
+[rt5738_driver_probe] PL rt5738_vddq is not exist
+
+[hl7593_driver_probe]
+
+[hl7593_read_interface] Reg[3]=0xA8
+
+[hl7593_read_interface] val=0xA8
+
+[hl7593_read_interface] Reg[4]=0x1
+
+[hl7593_read_interface] val=0x1
+
+[hl7593_read_interface] Reg[5]=0x81
+
+[hl7593_read_interface] val=0x1
+
+PGOOD = 1, chip_id = 43009
+
+[hl7593_hw_component_detect] exist = 1, Chip ID = A801
+
+hl7593_vdd2_hw_init
+
+[hl7593_read_interface] Reg[0]=0xD4
+
+[hl7593_read_interface] val=0xD4
+
+[0x0]=0xD4 [hl7593_read_interface] Reg[1]=0xD4
+
+[hl7593_read_interface] val=0xD4
+
+[0x1]=0xD4 [hl7593_read_interface] Reg[2]=0x82
+
+[hl7593_read_interface] val=0x82
+
+[0x2]=0x82 [hl7593_read_interface] Reg[3]=0xA8
+
+[hl7593_read_interface] val=0xA8
+
+[0x3]=0xA8 [hl7593_read_interface] Reg[4]=0x1
+
+[hl7593_read_interface] val=0x1
+
+[0x4]=0x1 [hl7593_read_interface] Reg[5]=0x81
+
+[hl7593_read_interface] val=0x81
+
+[0x5]=0x81 [hl7593_driver_probe] PL g_hl7593_0_hw_exist=1, g_hl7593_driver_ready=1
+
+[I2C] id=3,addr: 50, transfer error
+
+[I2C] I2C_ACKERR
+
+[I2C] write_read 0x10001 bytes fails,ret=-121.
+
+[hl7593_read_interface] Reg[3]=0x3
+
+[hl7593_read_interface] val=0x3
+
+[I2C] id=3,addr: 50, transfer error
+
+[I2C] I2C_ACKERR
+
+[I2C] write_read 0x10001 bytes fails,ret=-121.
+
+[hl7593_read_interface] Reg[4]=0x4
+
+[hl7593_read_interface] val=0x4
+
+[I2C] id=3,addr: 50, transfer error
+
+[I2C] I2C_ACKERR
+
+[I2C] write_read 0x10001 bytes fails,ret=-121.
+
+[hl7593_read_interface] Reg[5]=0x5
+
+[hl7593_read_interface] val=0x0
+
+PGOOD = 0, chip_id = 772
+
+[hl7593_hw_component_detect] exist = 0, Chip ID = 304
+
+[hl7593_driver_probe] PL hl7593_vddq is not exist
+
+hl7593_vdd2=0 uV
+
+[fan53526_driver_probe][fan53526_hw_component_detect] exist = 1, Chip ID = 8108
+
+[fan53526_driver_probe] PL g_fan53526_0_hw_exist=1, g_fan53526_driver_ready=1[fan53526_hw_component_detect] exist = 1, Chip ID = 8108
+
+[fan53526_driver_probe] PL g_fan53526_1_hw_exist=1, g_fan53526_driver_ready=1
+
+fan53526_vdd2=0 uV
+
+fan53526_vddq=600000 uV
+
+register vs1 OK
+
+register vmodem OK
+
+register vcore OK
+
+register vproc OK
+
+register vpa OK
+
+register vsram_others OK
+
+register vsram_proc OK
+
+register vdram OK
+
+[PMIC]Init done
+
+#T#PMIC=53
+
+#T#PLL POST Init=0
+
+[SD0] SET_CLK(260kHz): SCLK(259kHz) MODE(0) DDR(0) DIV(385) DS(0) RS(0)
+
+[SD0] SET_CLK(260kHz): SCLK(259kHz) MODE(2) DDR(1) DIV(192) DS(0) RS(0)
+
+[SD0] Size: 59640 MB, Max.Speed: 52000 kHz, blklen(512), nblks(122142720)
+
+[SD0] Initialized, eMMC45
+
+[SD0] SET_CLK(52000kHz): SCLK(50000kHz) MODE(2) DDR(1) DIV(1) DS(0) RS(0)
+
+#T#Boot dev init=197
+
+[PLFM] Init Boot Device: OK(0)
+
+#T#Long Pressed Reboot=0
+
+[PLFM] Init PWRAP: OK(0)
+
+[PLFM] Init PMIC: OK(0)
+
+[PLFM] chip_hw_ver[CA00], chip_sw_ver[0]
+
+clk_buf_dump_dts_log: PMIC_CLK_BUF?_STATUS=2 1 1 2 0 0 0
+
+clk_buf_dump_dts_log: PMIC_CLK_BUF?_DRV_CURR=1 1 1 1 1 1 1
+
+clk_buf_dump_clkbuf_log DCXO_CW00/02/11/13/14/15/16/20/top_spi_con1=0x4E1D 3AEE 8000 98E9 82B5 A2AA 9455 11 1
+
+clk_buf_dump_clkbuf_log DCXO_CW00/02/11/13/14/15/16/20/top_spi_con1=0x4E1D 3AEE 8000 98E9 82B5 A2AA 9455 11 0
+
+clk_buf_init_pmic_wrap: DCXO_CONN_ADR0/WDATA0/ADR1/WDATA1=0x44A/0/44A/1
+
+clk_buf_init_pmic_wrap: DCXO_NFC_ADR0/WDATA0/ADR1/WDATA1/EN=0x78C/100/78A/100/3
+
+[RTC]switch to dcxo
+
+[PMIC] pmic_init_setting end. v180104
+
+[MT6357] 1 1,48
+
+[MT6357] get volt 6, 61, 900000
+
+vsram_proc = 900000 uV
+
+[MT6357] get volt 3, 45, 800000
+
+vproc = 800000 uV
+
+[MT6357] get volt 5, 61, 900000
+
+vsram_others = 900000 uV
+
+[MT6357] get volt 2, 45, 800000
+
+vcore = 800000 uV
+
+[MT6357] get volt 1, 48, 800000
+
+vmodem = 800000 uV
+
+[MT6357] 2 5,1
+
+[MT6357] 2 6,1
+
+[MT6357] 2 3,1
+
+[MT6357] 2 2,1
+
+[MT6357] 2 1,1
+
+[DDR Reserve] ddr reserve mode not be enabled yet
+
+#T#chk DDR Reserve status=95
+
+Enter mtk_kpd_gpio_set! 
+
+after set KP enable: KP_SEL = 0x1C70 !
+
+#T#check Boot status-RTC=34
+
+#T#check Boot status-PMIC=0
+
+#T#check Boot status-WDT=0
+
+power key is pressed
+
+battery doesn't exist
+
+#T#check Boot status-PWR key=1
+
+[PMIC]IsUsbCableIn 0
+
+[PLFM] Unknown boot!
+
+[PMIC]POWER_HOLD :0x0
+
+?[hl7593_read_interface] Reg[3]=0xA8
+
+[hl7593_read_interface] val=0xA8
+
+[0x3]=0xA8[hl7593_read_interface] Reg[4]=0x1
+
+[hl7593_read_interface] val=0x1
+
+[0x4]=0x1 [hl7593_read_interface] Reg[5]=0x81
+
+[hl7593_read_interface] val=0x81
+
+[0x5]=0x81 [hl7593_driver_probe] PL g_hl7593_0_hw_exist=1, g_hl7593_driver_ready=1
+
+[I2C] id=3,addr: 50, transfer error
+
+[I2C] I2C_ACKERR
+
+[I2C] write_read 0x10001 bytes fails,ret=-121.
+
+[hl7593_read_interface] Reg[3]=0x3
+
+[hl7593_read_interface] val=0x3
+
+[I2C] id=3,addr: 50, transfer error
+
+[I2C] I2C_ACKERR
+
+[I2C] write_read 0x10001 bytes fails,ret=-121.
+
+[hl7593_read_interface] Reg[4]=0x4
+
+[hl7593_read_interface] val=0x4
+
+[I2C] id=3,addr: 50, transfer error
+
+[I2C] I2C_ACKERR
+
+[I2C] write_read 0x10001 bytes fails,ret=-121.
+
+[hl7593_read_interface] Reg[5]=0x5
+
+[hl7593_read_interface] val=0x0
+
+PGOOD = 0, chip_id = 772
+
+[hl7593_hw_component_detect] exist = 0, Chip ID = 304
+
+[hl7593_driver_probe] PL hl7593_vddq is not exist
+
+hl7593_vdd2=0 uV
+
+[fan53526_driver_probe]
+
+[fan53526_hw_component_detect] exist = 1, Chip ID = 8108
+
+[fan53526_driver_probe] PL g_fan53526_0_hw_exist=1, g_fan53526_driver_ready=1
+
+[fan53526_hw_component_detect] exist = 1, Chip ID = 8108
+
+[fan53526_driver_probe] PL g_fan53526_1_hw_exist=1, g_fan53526_driver_ready=1
+
+fan53526_vdd2=0 uV
+
+fan53526_vddq=600000 uV
+
+register vs1 OK
+
+register vmodem OK
+
+register vcore OK
+
+register vproc OK
+
+register vpa OK
+
+register vsram_others OK
+
+register vsram_proc OK
+
+register vdram OK
+
+[PMIC]Init done
+
+#T#PMIC=53
+
+#T#PLL POST Init=0
+
+[SD0] SET_CLK(260kHz): SCLK(259kHz) MODE(0) DDR(0) DIV(385) DS(0) RS(0)
+
+[SD0] SET_CLK(260kHz): SCLK(259kHz) MODE(2) DDR(1) DIV(192) DS(0) RS(0)
+
+[SD0] Size: 59640 MB, Max.Speed: 52000 kHz, blklen(512), nblks(122142720)
+
+[SD0] Initialized, eMMC45
+
+[SD0] SET_CLK(52000kHz): SCLK(50000kHz) MODE(2) DDR(1) DIV(1) DS(0) RS(0)
+
+#T#Boot dev init=197
+
+[PLFM] Init Boot Device: OK(0)
+
+#T#Long Pressed Reboot=0
+
+[PLFM] Init PWRAP: OK(0)
+
+[PLFM] Init PMIC: OK(0)
+
+[PLFM] chip_hw_ver[CA00], chip_sw_ver[0]
+
+clk_buf_dump_dts_log: PMIC_CLK_BUF?_STATUS=2 1 1 2 0 0 0
+
+clk_buf_dump_dts_log: PMIC_CLK_BUF?_DRV_CURR=1 1 1 1 1 1 1
+
+clk_buf_dump_clkbuf_log DCXO_CW00/02/11/13/14/15/16/20/top_spi_con1=0x4E1D 3AEE 8000 98E9 82B5 A2AA 9455 11 1
+
+clk_buf_dump_clkbuf_log DCXO_CW00/02/11/13/14/15/16/20/top_spi_con1=0x4E1D 3AEE 8000 98E9 82B5 A2AA 9455 11 0
+
+clk_buf_init_pmic_wrap: DCXO_CONN_ADR0/WDATA0/ADR1/WDATA1=0x44A/0/44A/1
+
+clk_buf_init_pmic_wrap: DCXO_NFC_ADR0/WDATA0/ADR1/WDATA1/EN=0x78C/100/78A/100/3
+
+[RTC]switch to dcxo
+
+[PMIC] pmic_init_setting end. v180104
+
+[MT6357] 1 1,48
+
+[MT6357] get volt 6, 61, 900000
+
+vsram_proc = 900000 uV
+
+[MT6357] get volt 3, 45, 800000
+
+vproc = 800000 uV
+
+[MT6357] get volt 5, 61, 900000
+
+vsram_others = 900000 uV
+
+[MT6357] get volt 2, 45, 800000
+
+vcore = 800000 uV
+
+[MT6357] get volt 1, 48, 800000
+
+vmodem = 800000 uV
+
+[MT6357] 2 5,1
+
+[MT6357] 2 6,1
+
+[MT6357] 2 3,1
+
+[MT6357] 2 2,1
+
+[MT6357] 2 1,1
+
+[DDR Reserve] ddr reserve mode not be enabled yet
+
+#T#chk DDR Reserve status=95
+
+Enter mtk_kpd_gpio_set! 
+
+after set KP enable: KP_SEL = 0x1C70 !
+
+#T#check Boot status-RTC=34
+
+#T#check Boot status-PMIC=0
+
+#T#check Boot status-WDT=0
+
+power key is pressed
+
+battery doesn't exist
+
+#T#check Boot status-PWR key=1
+
+[PMIC]IsUsbCableIn 0
+
+[PLFM] Unknown boot!
+
+[PMIC]POWER_HOLD :0x?[RTC]switch to dcxo[PMIC] pmic_init_setting end. v180104
+
+[MT6357] 1 1,48
+
+[MT6357] get volt 6, 61, 900000
+
+vsram_proc = 900000 uV
+
+[MT6357] get volt 3, 45, 800000
+
+vproc = 800000 uV
+
+[MT6357] get volt 5, 61, 900000
+
+vsram_others = 900000 uV
+
+[MT6357] get volt 2, 45, 800000
+
+vcore = 800000 uV
+
+[MT6357] get volt 1, 48, 800000
+
+vmodem = 800000 uV
+
+[MT6357] 2 5,1
+
+[MT6357] 2 6,1
+
+[MT6357] 2 3,1
+
+[MT6357] 2 2,1
+
+[MT6357] 2 1,1
+
+[DDR Reserve] ddr reserve mode not be enabled yet
+
+#T#chk DDR Reserve status=95
+
+Enter mtk_kpd_gpio_set! 
+
+after set KP enable: KP_SEL = 0x1C70 !
+
+#T#check Boot status-RTC=34
+
+#T#check Boot status-PMIC=0
+
+#T#check Boot status-WDT=0
+
+power key is pressed
+
+battery doesn't exist
+
+#T#check Boot status-PWR key=1
+
+[PMIC]IsUsbCableIn 0
+
+[PLFM] Unknown boot!
+
+[PMIC]POWER_HOLD :0x0?Start=1
+
+[HT22] : 1 0x4 0x4 done
+
+0:0x80000000, 1:0x1100, 2:0x1, 3:0x80002, 4:0x40000000, STA:0x0, S:0x4, FAB0:0x6765, FAB11:0x0
+
+A:0x0, B:0x3F, C:0x40, D:0x1F, E:0x1, F:0x3, G:0x2
+
+DATE_CODE_YY:1, DATE_CODE_WW:1A
+
+[SegCode] Segment Code:0x4, PROJECT_CODE:0x0, FAB_CODE:0x2, RW_STA:0x0, CTL:0x0, DCM:0x7
+
+#T#DEVINFO=28
+
+Pll init start...
+
+Pll init Done!
+
+#T#PLL=2
+
+#T#GPIO=0
+
+[PWRAP] CRITICAL,line=848 [PWRAP] CRITICAL,line=843 [PWRAP] CRITICAL,line=876 [PWRAP] CRITICAL,line=895 [PWRAP] CRITICAL,line=1173 [PWRAP] CRITICAL,line=1195 [PWRAP] CRITICAL,line=1355 [PWRAP] CRITICAL,line=1357 [PWRAP] CRITICAL,line=1359 [PWRAP] CRITICAL,line=1361 [PWRAP] CRITICAL,line=1363 [PWRAP] CRITICAL,line=1365 [PWRAP] CRITICAL,line=1474 #T#PWRAP=5
+
+#T#I2C=0
+
+[PMIC]Preloader Start
+
+[PMIC]MT6357 CHIP Code = 0x5721
+
+[PMIC]POWER_HOLD :0x1
+
+[PMIC]TOP_RST_STATUS[0x152]=0x48
+
+[PMIC]PONSTS[0xC]=0x1
+
+[PMIC]POFFSTS[0xE]=0x80
+
+[PMIC]PGSTATUS0[0x14]=0xFFFE
+
+[PMIC]PSOCSTATUS[0x16]=0x0
+
+[PMIC]BUCK_OC_SDN_STATUS[0x1434]=0x0
+
+[PMIC]BUCK_OC_SDN_EN[0x1444]=0x19F
+
+[PMIC]THERMALSTATUS[0x18]=0x0
+
+[PMIC]STRUP_CON4[0xA1C]=0x0
+
+[PMIC]TOP_RST_MISC[0x14C]=0x1200
+
+[PMIC]TOP_CLK_TRIM[0x38E]=0x6CC0
+
+latch VPROC 800000 uV
+
+latch VSRAM_PROC 900000 uV
+
+latch VSRAM_OTHERS 900000 uV
+
+latch VCORE 800000 uV
+
+latch VMODEM 800000 uV
+
+[pmic_check_rst] DDLO_RSTB
+
+[PMIC]just_rst = 0
+
+No EFUSE SW Load
+
+battery doesn't exist
+
+[PMIC]pmic_wdt_set Reg[0x14C]=0x1221
+
+[rt5738_driver_probe]
+
+[rt5738_hw_component_detect] exist = 0, Chip ID = A801
+
+[rt5738_driver_probe] PL rt5738_vdd2 is not exist
+
+[I2C] id=3,addr: 50, transfer error
+
+[I2C] I2C_ACKERR
+
+[I2C] write_read 0x10001 bytes fails,ret=-121.
+
+[I2C] id=3,addr: 50, transfer error
+
+[I2C] I2C_ACKERR
+
+[I2C] write_read 0x10001 bytes fails,ret=-121.
+
+[I2C] id=3,addr: 50, transfer error
+
+[I2C] I2C_ACKERR
+
+[I2C] write_read 0x10001 bytes fails,ret=-121.
+
+[rt5738_hw_component_detect] exist = 0, Chip ID = 304
+
+[rt5738_driver_probe] PL rt5738_vddq is not exist
+
+[hl7593_driver_probe]
+
+[hl7593_read_interface] Reg[3]=0xA8
+
+[hl7593_read_interface] val=0xA8
+
+[hl7593_read_interface] Reg[4]=0x1
+
+[hl7593_read_interface] val=0x1
+
+[hl7593_read_interface] Reg[5]=0x81
+
+[hl7593_read_interface] val=0x1
+
+PGOOD = 1, chip_id = 43009
+
+[hl7593_hw_component_detect] exist = 1, Chip ID = A801
+
+hl7593_vdd2_hw_init
+
+[hl7593_read_interface] Reg[0]=0xD4
+
+[hl7593_read_interface] val=0xD4
+
+[0x0]=0xD4 [hl7593_read_interface] Reg[1]=0xD4
+
+[hl7593_read_interface] val=0xD4
+
+[0x1]=0xD4 [hl7593_read_interface] Reg[2]=0x82
+
+[hl7593_read_interface] val=0x82
+
+[0x2]=0x82 [hl7593_read_interface] Reg[3]=0xA8
+
+[hl7593_read_interface] val=0xA8
+
+[0x3]=0xA8 [hl7593_read_interface] Reg[4]=0x1
+
+[hl7593_read_interface] val=0x1
+
+[0x4]=0x1 [hl7593_read_interface] Reg[5]=0x81
+
+[hl7593_read_interface] val=0x81
+
+[0x5]=0x81 [hl7593_driver_probe] PL g_hl7593_0_hw_exist=1, g_hl7593_driver_ready=1
+
+[I2C] id=3,addr: 50, transfer error
+
+[I2C] I2C_ACKERR
+
+[I2C] write_read 0x10001 bytes fails,ret=-121.
+
+[hl7593_read_interface] Reg[3]=0x3
+
+[hl7593_read_interface] val=0x3
+
+[I2C] id=3,addr: 50, transfer error
+
+[I2C] I2C_ACKERR
+
+[I2C] write_read 0x10001 bytes fails,ret=-121.
+
+[hl7593_read_interface] Reg[4]=0x4
+
+[hl7593_read_interface] val=0x4
+
+[I2C] id=3,addr: 50, transfer error
+
+[I2C] I2C_ACKERR
+
+[I2C] write_read 0x10001 bytes fails,ret=-121.
+
+[hl7593_read_interface] Reg[5]=0x5
+
+[hl7593_read_interface] val=0x0
+
+PGOOD = 0, chip_id = 772
+
+[hl7593_hw_component_detect] exist = 0, Chip ID = 304
+
+[hl7593_driver_probe] PL hl7593_vddq is not exist
+
+hl7593_vdd2=0 uV
+
+[fan53526_driver_probe]
+
+[fan53526_hw_component_detect] exist = 1, Chip ID = 8108
+
+[fan53526_driver_probe] PL g_fan53526_0_hw_exist=1, g_fan53526_driver_ready=1
+
+[fan53526_hw_component_detect] exist = 1, Chip ID = 8108
+
+[fan53526_driver_probe] PL g_fan53526_1_hw_exist=1, g_fan53526_driver_ready=1
+
+fan53526_vdd2=0 uV
+
+fan53526_vddq=600000 uV
+
+register vs1 OK
+
+register vmodem OK
+
+register vcore OK
+
+register vproc OK
+
+register vpa OK
+
+register vsram_others OK
+
+register vsram_proc OK
+
+register vdram OK
+
+[PMIC]Init done
+
+#T#PMIC=53
+
+#T#PLL POST Init=0
+
+[SD0] SET_CLK(260kHz): SCLK(259kHz) MODE(0) DDR(0) DIV(385) DS(0) RS(0)
+
+[SD0] SET_CLK(260kHz): SCLK(259kHz) MODE(2) DDR(1) DIV(192) DS(0) RS(0)
+
+[SD0] Size: 59640 MB, Max.Speed: 52000 kHz, blklen(512), nblks(122142720)
+
+[SD0] Initialized, eMMC45
+
+[SD0] SET_CLK(52000kHz): SCLK(50000kHz) MODE(2) DDR(1) DIV(1) DS(0) RS(0)
+
+#T#Boot dev init=197
+
+[PLFM] Init Boot Device: OK(0)
+
+#T#Long Pressed Reboot=0
+
+[PLFM] Init PWRAP: OK(0)
+
+[PLFM] Init PMIC: OK(0)
+
+[PLFM] chip_hw_ver[CA00], chip_sw_ver[0]
+
+clk_buf_dump_dts_log: PMIC_CLK_BUF?_STATUS=2 1 1 2 0 0 0
+
+clk_buf_dump_dts_log: PMIC_CLK_BUF?_DRV_CURR=1 1 1 1 1 1 1
+
+clk_buf_dump_clkbuf_log DCXO_CW00/02/11/13/14/15/16/20/top_spi_con1=0x4E1D 3AEE 8000 98E9 82B5 A2AA 9455 11 1
+
+clk_buf_dump_clkbuf_log DCXO_CW00/02/11/13/14/15/16/20/top_spi_con1=0x4E1D 3AEE 8000 98E9 82B5 A2AA 9455 11 0
+
+clk_buf_init_pmic_wrap: DCXO_CONN_ADR0/WDATA0/ADR1/WDATA1=0x44A/0/44A/1
+
+clk_buf_init_pmic_wrap: DCXO_NFC_ADR0/WDATA0/ADR1/WDATA1/EN=0x78C/100/78A/100/3
+
+[RTC]switch to dcxo
+
+[PMIC] pmic_init_setting end. v180104
+
+[MT6357] 1 1,48
+
+[MT6357] get volt 6, 61, 900000
+
+vsram_proc = 900000 uV
+
+[MT6357] get volt 3, 45, 800000
+
+vproc = 800000 uV
+
+[MT6357] get volt 5, 61, 900000
+
+vsram_others = 900000 uV
+
+[MT6357] get volt 2, 45, 800000
+
+vcore = 800000 uV
+
+[MT6357] get volt 1, 48, 800000
+
+vmodem = 800000 uV
+
+[MT6357] 2 5,1
+
+[MT6357] 2 6,1
+
+[MT6357] 2 3,1
+
+[MT6357] 2 2,1
+
+[MT6357] 2 1,1
+
+[DDR Reserve] ddr reserve mode not be enabled yet
+
+#T#chk DDR Reserve status=95
+
+Enter mtk_kpd_gpio_set! 
+
+after set KP enable: KP_SEL = 0x1C70 !
+
+#T#check Boot status-RTC=34
+
+#T#check Boot status-PMIC=0
+
+#T#check Boot status-WDT=0
+
+power key is pressed
+
+battery doesn't exist
+
+#T#check Boot status-PWR key=1
+
+[PMIC]IsUsbCableIn 0
+
+[PLFM] Unknown boot!
+
+[PMIC]POWER_HOLD :0?

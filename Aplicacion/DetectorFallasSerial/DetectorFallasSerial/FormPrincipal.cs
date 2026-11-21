@@ -239,5 +239,20 @@ namespace DetectorFallasSerial
             _chatGptClient?.Dispose();
             base.OnFormClosed(e);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.SaveFileDialog saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            if (saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                System.IO.File.WriteAllText(saveFileDialog.FileName, diagnosisTextBox.Text);
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            diagnosisTextBox.Text = "";
+        }
     }
 }
