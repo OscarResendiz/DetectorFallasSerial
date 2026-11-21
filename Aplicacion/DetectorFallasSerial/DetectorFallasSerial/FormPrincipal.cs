@@ -1,12 +1,13 @@
 using DetectorFallasSerial.PuertoSerial;
 using DetectorFallasSerial.LLMS.ChatGpt;
 using System.IO.Ports;
-
+using System.Speech.Synthesis;
 
 namespace DetectorFallasSerial
 {
     public partial class FormPrincipal : Form
     {
+        SpeechSynthesizer voz;
         private SerialPort? PuertoSerial;
         private bool LecturaSerialPausada = false;
         private ChatGptClient? _chatGptClient;
@@ -17,6 +18,8 @@ namespace DetectorFallasSerial
             InitializeComponent();
             connectionStatusLabel.Text = "Desconectado";
             connectionStatusLabel.ForeColor = Color.Red;
+            voz = new SpeechSynthesizer();
+            voz.SelectVoice("Microsoft Sabina Desktop");
 
         }
 
@@ -218,6 +221,7 @@ namespace DetectorFallasSerial
                 var respuesta = await _chatGptClient.ConsultarAsync(consulta);
                 diagnosisTextBox.Text = respuesta;
                 statusLabel.Text = "Consulta completada";
+
             }
             catch (Exception ex)
             {
@@ -253,6 +257,45 @@ namespace DetectorFallasSerial
         private void button2_Click(object sender, EventArgs e)
         {
             diagnosisTextBox.Text = "";
+        }
+
+        private void monitorActions_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.OpenFileDialog openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                serialOutputTextBox.Text = System.IO.File.ReadAllText(openFileDialog.FileName);
+            }
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string respuesta = diagnosisTextBox.SelectedText;
+            if (respuesta == "")
+                respuesta = diagnosisTextBox.Text;
+            voz.SpeakAsync(respuesta);
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.OpenFileDialog openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                diagnosisTextBox.Text = System.IO.File.ReadAllText(openFileDialog.FileName);
+            }
+
+        }
+
+        private void diagnosisHeader_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

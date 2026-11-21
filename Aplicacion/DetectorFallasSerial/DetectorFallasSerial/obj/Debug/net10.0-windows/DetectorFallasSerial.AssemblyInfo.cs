@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DetectorFallasSerial")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f3c9355439afa588ec3fec05c5d50bd3c57cc85")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10246a085ebedaa83d8d75d49d337b58d9cdb1da")]
 [assembly: System.Reflection.AssemblyProductAttribute("DetectorFallasSerial")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DetectorFallasSerial")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

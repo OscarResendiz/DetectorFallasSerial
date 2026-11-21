@@ -53,6 +53,7 @@ namespace DetectorFallasSerial
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             serialSettingsLayout = new TableLayoutPanel();
             portField = new Panel();
+            panel3 = new Panel();
             connectionStatusLabel = new Label();
             portLabel = new Label();
             portComboBox = new ComboBox();
@@ -71,6 +72,7 @@ namespace DetectorFallasSerial
             pauseButton = new Button();
             clearButton = new Button();
             GuardarLogBtn = new Button();
+            button3 = new Button();
             analyzeButton = new Button();
             promptCard = new Panel();
             promptTextBox = new RichTextBox();
@@ -84,6 +86,7 @@ namespace DetectorFallasSerial
             diagnosisCard = new Panel();
             diagnosisTextBox = new RichTextBox();
             diagnosisHeader = new Panel();
+            button4 = new Button();
             button2 = new Button();
             button1 = new Button();
             diagnosisTitleLabel = new Label();
@@ -92,7 +95,7 @@ namespace DetectorFallasSerial
             splitContainer1 = new SplitContainer();
             splitContainer2 = new SplitContainer();
             panel2 = new Panel();
-            panel3 = new Panel();
+            button5 = new Button();
             serialSettingsLayout.SuspendLayout();
             portField.SuspendLayout();
             baudField.SuspendLayout();
@@ -132,7 +135,7 @@ namespace DetectorFallasSerial
             serialSettingsLayout.Name = "serialSettingsLayout";
             serialSettingsLayout.RowCount = 1;
             serialSettingsLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            serialSettingsLayout.Size = new Size(1048, 69);
+            serialSettingsLayout.Size = new Size(1526, 69);
             serialSettingsLayout.TabIndex = 0;
             // 
             // portField
@@ -146,8 +149,18 @@ namespace DetectorFallasSerial
             portField.Location = new Point(3, 3);
             portField.Name = "portField";
             portField.Padding = new Padding(2, 0, 8, 0);
-            portField.Size = new Size(392, 63);
+            portField.Size = new Size(573, 63);
             portField.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
+            panel3.BackgroundImageLayout = ImageLayout.Stretch;
+            panel3.Dock = DockStyle.Left;
+            panel3.Location = new Point(2, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(66, 63);
+            panel3.TabIndex = 3;
             // 
             // connectionStatusLabel
             // 
@@ -191,10 +204,10 @@ namespace DetectorFallasSerial
             baudField.Controls.Add(baudComboBox);
             baudField.Controls.Add(baudLabel);
             baudField.Dock = DockStyle.Fill;
-            baudField.Location = new Point(401, 3);
+            baudField.Location = new Point(582, 3);
             baudField.Name = "baudField";
             baudField.Padding = new Padding(2, 0, 8, 0);
-            baudField.Size = new Size(276, 63);
+            baudField.Size = new Size(406, 63);
             baudField.TabIndex = 1;
             // 
             // baudComboBox
@@ -209,7 +222,7 @@ namespace DetectorFallasSerial
             baudComboBox.Location = new Point(2, 26);
             baudComboBox.Margin = new Padding(0);
             baudComboBox.Name = "baudComboBox";
-            baudComboBox.Size = new Size(266, 25);
+            baudComboBox.Size = new Size(396, 25);
             baudComboBox.TabIndex = 1;
             // 
             // baudLabel
@@ -219,7 +232,7 @@ namespace DetectorFallasSerial
             baudLabel.ForeColor = Color.FromArgb(236, 239, 242);
             baudLabel.Location = new Point(2, 0);
             baudLabel.Name = "baudLabel";
-            baudLabel.Size = new Size(266, 26);
+            baudLabel.Size = new Size(396, 26);
             baudLabel.TabIndex = 2;
             baudLabel.Text = "Baudios:";
             baudLabel.TextAlign = ContentAlignment.MiddleLeft;
@@ -231,10 +244,10 @@ namespace DetectorFallasSerial
             serialActions.Controls.Add(connectButton);
             serialActions.Dock = DockStyle.Fill;
             serialActions.FlowDirection = FlowDirection.RightToLeft;
-            serialActions.Location = new Point(683, 3);
+            serialActions.Location = new Point(994, 3);
             serialActions.Name = "serialActions";
             serialActions.Padding = new Padding(0, 14, 0, 0);
-            serialActions.Size = new Size(362, 63);
+            serialActions.Size = new Size(529, 63);
             serialActions.TabIndex = 0;
             serialActions.WrapContents = false;
             // 
@@ -245,7 +258,7 @@ namespace DetectorFallasSerial
             configButton.FlatStyle = FlatStyle.Flat;
             configButton.Font = new Font("Segoe UI", 10F);
             configButton.ForeColor = Color.FromArgb(242, 244, 246);
-            configButton.Location = new Point(265, 14);
+            configButton.Location = new Point(432, 14);
             configButton.Margin = new Padding(5, 0, 5, 0);
             configButton.Name = "configButton";
             configButton.Size = new Size(92, 34);
@@ -262,7 +275,7 @@ namespace DetectorFallasSerial
             disconnectButton.FlatStyle = FlatStyle.Flat;
             disconnectButton.Font = new Font("Segoe UI", 10F);
             disconnectButton.ForeColor = Color.FromArgb(242, 244, 246);
-            disconnectButton.Location = new Point(129, 14);
+            disconnectButton.Location = new Point(296, 14);
             disconnectButton.Margin = new Padding(5, 0, 5, 0);
             disconnectButton.Name = "disconnectButton";
             disconnectButton.Size = new Size(126, 34);
@@ -278,7 +291,7 @@ namespace DetectorFallasSerial
             connectButton.FlatStyle = FlatStyle.Flat;
             connectButton.Font = new Font("Segoe UI", 10F);
             connectButton.ForeColor = Color.FromArgb(242, 244, 246);
-            connectButton.Location = new Point(-7, 14);
+            connectButton.Location = new Point(160, 14);
             connectButton.Margin = new Padding(5, 0, 5, 0);
             connectButton.Name = "connectButton";
             connectButton.Size = new Size(126, 34);
@@ -297,7 +310,7 @@ namespace DetectorFallasSerial
             serialMonitorCard.Margin = new Padding(0, 8, 0, 12);
             serialMonitorCard.Name = "serialMonitorCard";
             serialMonitorCard.Padding = new Padding(14);
-            serialMonitorCard.Size = new Size(1048, 259);
+            serialMonitorCard.Size = new Size(1526, 259);
             serialMonitorCard.TabIndex = 1;
             // 
             // serialOutputTextBox
@@ -312,7 +325,7 @@ namespace DetectorFallasSerial
             serialOutputTextBox.Margin = new Padding(0);
             serialOutputTextBox.Name = "serialOutputTextBox";
             serialOutputTextBox.ReadOnly = true;
-            serialOutputTextBox.Size = new Size(1020, 191);
+            serialOutputTextBox.Size = new Size(1498, 191);
             serialOutputTextBox.TabIndex = 0;
             serialOutputTextBox.Text = resources.GetString("serialOutputTextBox.Text");
             // 
@@ -323,7 +336,7 @@ namespace DetectorFallasSerial
             monitorHeader.Dock = DockStyle.Top;
             monitorHeader.Location = new Point(14, 14);
             monitorHeader.Name = "monitorHeader";
-            monitorHeader.Size = new Size(1020, 40);
+            monitorHeader.Size = new Size(1498, 40);
             monitorHeader.TabIndex = 0;
             // 
             // monitorTitleLabel
@@ -333,7 +346,7 @@ namespace DetectorFallasSerial
             monitorTitleLabel.ForeColor = Color.FromArgb(236, 239, 242);
             monitorTitleLabel.Location = new Point(0, 0);
             monitorTitleLabel.Name = "monitorTitleLabel";
-            monitorTitleLabel.Size = new Size(702, 40);
+            monitorTitleLabel.Size = new Size(1076, 40);
             monitorTitleLabel.TabIndex = 0;
             monitorTitleLabel.Text = "MONITOR DE LECTURA SERIAL (TELEMETRÍA)";
             monitorTitleLabel.TextAlign = ContentAlignment.MiddleLeft;
@@ -343,12 +356,14 @@ namespace DetectorFallasSerial
             monitorActions.Controls.Add(pauseButton);
             monitorActions.Controls.Add(clearButton);
             monitorActions.Controls.Add(GuardarLogBtn);
+            monitorActions.Controls.Add(button3);
             monitorActions.Dock = DockStyle.Right;
-            monitorActions.Location = new Point(702, 0);
+            monitorActions.Location = new Point(1076, 0);
             monitorActions.Name = "monitorActions";
-            monitorActions.Size = new Size(318, 40);
+            monitorActions.Size = new Size(422, 40);
             monitorActions.TabIndex = 0;
             monitorActions.WrapContents = false;
+            monitorActions.Paint += monitorActions_Paint;
             // 
             // pauseButton
             // 
@@ -398,6 +413,22 @@ namespace DetectorFallasSerial
             GuardarLogBtn.UseVisualStyleBackColor = false;
             GuardarLogBtn.Click += GuardarLogBtn_Click;
             // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(47, 55, 65);
+            button3.FlatAppearance.BorderColor = Color.FromArgb(65, 73, 83);
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Segoe UI", 10F);
+            button3.ForeColor = Color.FromArgb(242, 244, 246);
+            button3.Location = new Point(319, 0);
+            button3.Margin = new Padding(5, 0, 5, 0);
+            button3.Name = "button3";
+            button3.Size = new Size(100, 34);
+            button3.TabIndex = 4;
+            button3.Text = "Abrir log";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // analyzeButton
             // 
             analyzeButton.BackColor = Color.FromArgb(47, 55, 65);
@@ -424,7 +455,7 @@ namespace DetectorFallasSerial
             promptCard.Margin = new Padding(0, 0, 7, 0);
             promptCard.Name = "promptCard";
             promptCard.Padding = new Padding(14);
-            promptCard.Size = new Size(566, 501);
+            promptCard.Size = new Size(822, 501);
             promptCard.TabIndex = 0;
             // 
             // promptTextBox
@@ -438,9 +469,9 @@ namespace DetectorFallasSerial
             promptTextBox.Location = new Point(14, 90);
             promptTextBox.Margin = new Padding(0);
             promptTextBox.Name = "promptTextBox";
-            promptTextBox.Size = new Size(538, 397);
+            promptTextBox.Size = new Size(794, 397);
             promptTextBox.TabIndex = 0;
-            promptTextBox.Text = "Describe el comportamiento del equipo aquí o usa una plantilla... (ej. 'Consumo 1.85A al conectar cargador')";
+            promptTextBox.Text = "analiza el log e indicame que puede estar fallanado en el encendido";
             // 
             // promptHeader
             // 
@@ -449,7 +480,7 @@ namespace DetectorFallasSerial
             promptHeader.Dock = DockStyle.Top;
             promptHeader.Location = new Point(14, 14);
             promptHeader.Name = "promptHeader";
-            promptHeader.Size = new Size(538, 76);
+            promptHeader.Size = new Size(794, 76);
             promptHeader.TabIndex = 0;
             // 
             // promptTitleLabel
@@ -459,7 +490,7 @@ namespace DetectorFallasSerial
             promptTitleLabel.ForeColor = Color.FromArgb(236, 239, 242);
             promptTitleLabel.Location = new Point(0, 0);
             promptTitleLabel.Name = "promptTitleLabel";
-            promptTitleLabel.Size = new Size(538, 30);
+            promptTitleLabel.Size = new Size(794, 30);
             promptTitleLabel.TabIndex = 0;
             promptTitleLabel.Text = "CONSULTA TÉCNICA (PROMPT)";
             promptTitleLabel.TextAlign = ContentAlignment.MiddleLeft;
@@ -473,7 +504,7 @@ namespace DetectorFallasSerial
             promptActions.Dock = DockStyle.Bottom;
             promptActions.Location = new Point(0, 40);
             promptActions.Name = "promptActions";
-            promptActions.Size = new Size(538, 36);
+            promptActions.Size = new Size(794, 36);
             promptActions.TabIndex = 0;
             promptActions.WrapContents = false;
             // 
@@ -544,7 +575,7 @@ namespace DetectorFallasSerial
             diagnosisCard.Margin = new Padding(7, 0, 0, 0);
             diagnosisCard.Name = "diagnosisCard";
             diagnosisCard.Padding = new Padding(14);
-            diagnosisCard.Size = new Size(478, 501);
+            diagnosisCard.Size = new Size(700, 501);
             diagnosisCard.TabIndex = 1;
             // 
             // diagnosisTextBox
@@ -559,20 +590,38 @@ namespace DetectorFallasSerial
             diagnosisTextBox.Margin = new Padding(0);
             diagnosisTextBox.Name = "diagnosisTextBox";
             diagnosisTextBox.ReadOnly = true;
-            diagnosisTextBox.Size = new Size(450, 430);
+            diagnosisTextBox.Size = new Size(672, 430);
             diagnosisTextBox.TabIndex = 0;
             diagnosisTextBox.Text = resources.GetString("diagnosisTextBox.Text");
             // 
             // diagnosisHeader
             // 
+            diagnosisHeader.Controls.Add(button5);
+            diagnosisHeader.Controls.Add(button4);
             diagnosisHeader.Controls.Add(button2);
             diagnosisHeader.Controls.Add(button1);
             diagnosisHeader.Controls.Add(diagnosisTitleLabel);
             diagnosisHeader.Dock = DockStyle.Top;
             diagnosisHeader.Location = new Point(14, 14);
             diagnosisHeader.Name = "diagnosisHeader";
-            diagnosisHeader.Size = new Size(450, 43);
+            diagnosisHeader.Size = new Size(672, 43);
             diagnosisHeader.TabIndex = 0;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.FromArgb(47, 55, 65);
+            button4.FlatAppearance.BorderColor = Color.FromArgb(65, 73, 83);
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Segoe UI", 10F);
+            button4.ForeColor = Color.FromArgb(242, 244, 246);
+            button4.Location = new Point(569, 4);
+            button4.Margin = new Padding(5, 0, 5, 0);
+            button4.Name = "button4";
+            button4.Size = new Size(92, 34);
+            button4.TabIndex = 4;
+            button4.Text = "Leer";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button2
             // 
@@ -581,7 +630,7 @@ namespace DetectorFallasSerial
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 10F);
             button2.ForeColor = Color.FromArgb(242, 244, 246);
-            button2.Location = new Point(340, 4);
+            button2.Location = new Point(469, 4);
             button2.Margin = new Padding(5, 0, 5, 0);
             button2.Name = "button2";
             button2.Size = new Size(92, 34);
@@ -625,7 +674,7 @@ namespace DetectorFallasSerial
             statusLabel.ForeColor = Color.FromArgb(197, 203, 210);
             statusLabel.Location = new Point(0, 833);
             statusLabel.Name = "statusLabel";
-            statusLabel.Size = new Size(1048, 27);
+            statusLabel.Size = new Size(1526, 27);
             statusLabel.TabIndex = 0;
             statusLabel.Text = "Estado: Listo  |  Puerto COM3 (115200, 8, N, 1)  |  Última respuesta: 1.4s";
             statusLabel.TextAlign = ContentAlignment.MiddleLeft;
@@ -637,7 +686,7 @@ namespace DetectorFallasSerial
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1048, 833);
+            panel1.Size = new Size(1526, 833);
             panel1.TabIndex = 1;
             // 
             // splitContainer1
@@ -654,7 +703,7 @@ namespace DetectorFallasSerial
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.Controls.Add(splitContainer2);
-            splitContainer1.Size = new Size(1048, 764);
+            splitContainer1.Size = new Size(1526, 764);
             splitContainer1.SplitterDistance = 259;
             splitContainer1.TabIndex = 1;
             // 
@@ -671,8 +720,8 @@ namespace DetectorFallasSerial
             // splitContainer2.Panel2
             // 
             splitContainer2.Panel2.Controls.Add(diagnosisCard);
-            splitContainer2.Size = new Size(1048, 501);
-            splitContainer2.SplitterDistance = 566;
+            splitContainer2.Size = new Size(1526, 501);
+            splitContainer2.SplitterDistance = 822;
             splitContainer2.TabIndex = 0;
             // 
             // panel2
@@ -681,25 +730,31 @@ namespace DetectorFallasSerial
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1048, 69);
+            panel2.Size = new Size(1526, 69);
             panel2.TabIndex = 0;
             // 
-            // panel3
+            // button5
             // 
-            panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
-            panel3.BackgroundImageLayout = ImageLayout.Stretch;
-            panel3.Dock = DockStyle.Left;
-            panel3.Location = new Point(2, 0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(66, 63);
-            panel3.TabIndex = 3;
+            button5.BackColor = Color.FromArgb(47, 55, 65);
+            button5.FlatAppearance.BorderColor = Color.FromArgb(65, 73, 83);
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Segoe UI", 10F);
+            button5.ForeColor = Color.FromArgb(242, 244, 246);
+            button5.Location = new Point(340, 4);
+            button5.Margin = new Padding(5, 0, 5, 0);
+            button5.Name = "button5";
+            button5.Size = new Size(119, 34);
+            button5.TabIndex = 5;
+            button5.Text = "Abrir respuesta";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(18, 23, 29);
-            ClientSize = new Size(1048, 860);
+            ClientSize = new Size(1526, 860);
             Controls.Add(panel1);
             Controls.Add(statusLabel);
             Font = new Font("Segoe UI", 10F);
@@ -743,5 +798,8 @@ namespace DetectorFallasSerial
         private Button button1;
         private Button button2;
         private Panel panel3;
+        private Button button3;
+        private Button button4;
+        private Button button5;
     }
 }
