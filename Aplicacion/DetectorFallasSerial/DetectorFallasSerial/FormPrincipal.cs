@@ -18,9 +18,16 @@ namespace DetectorFallasSerial
             InitializeComponent();
             connectionStatusLabel.Text = "Desconectado";
             connectionStatusLabel.ForeColor = Color.Red;
-            voz = new SpeechSynthesizer();
-            voz.SelectVoice("Microsoft Sabina Desktop");
+            try
+            {
+                voz = new SpeechSynthesizer();
+                voz.SelectVoice("Microsoft Sabina Desktop");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al seleccionar la voz: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+            }
         }
 
         private void configButton_Click(object sender, EventArgs e)
